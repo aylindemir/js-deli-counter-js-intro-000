@@ -7,9 +7,8 @@ function takeANumber(lineOfPeople,newPersonName){
 }
 
 function nowServing(lineOfPeople){
-
   while(lineOfPeople.length>0){
-    return lineOfPeople.shift
+   lineOfPeople.shift()
   }
-
+  return "There is nobody waiting to be served!"
 }
