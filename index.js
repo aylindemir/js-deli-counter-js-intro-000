@@ -9,8 +9,7 @@ function takeANumber(lineOfPeople,newPersonName){
 function nowServing(lineOfPeople){
 
   while(lineOfPeople.length>0){
-    var firstPerson= lineOfPeople[0];
-    return lineOfPeople.shift(firstPerson)
+    return lineOfPeople.shift
   }
 
 }
