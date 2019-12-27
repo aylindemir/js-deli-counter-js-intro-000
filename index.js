@@ -7,10 +7,10 @@ function takeANumber(lineOfPeople,newPersonName){
 }
 
 function nowServing(lineOfPeople){
-  if(lineOfPeople.length>0){
-    lineOfPeople=lineOfPeople.remove(lineOfPeople.indexOf(0))
-  }else{
-    console.log("There is nobody waiting to be served!")
+
+  while(lineOfPeople.length>0){
+    var firstPerson= lineOfPeople[0];
+    return lineOfPeople.shift(firstPerson)
   }
-  return lineOfPeople
+
 }
